@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8eee93d1235b19b4c9248cd43bd7e49f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - objNameSO: {fileID: 11400000, guid: 2c8826265a1b7bd48a7e9f0fa94905f5, type: 2}
+  - herbalCount: {fileID: 11400000, guid: 47d3fec81ecf10043ae04689ce79011c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

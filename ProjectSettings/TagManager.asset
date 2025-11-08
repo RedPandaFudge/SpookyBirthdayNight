@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Pickables
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Pickables
+  - GravityColliders
+  - WorldBoundary
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG
+    uniqueID: 777075157
+    locked: 0
+  - name: Items
+    uniqueID: 1262327639
+    locked: 0
+  - name: Interactables
+    uniqueID: 3250304405
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Pickables
+    uniqueID: 256678919
+    locked: 0
+  - name: Player
+    uniqueID: 2655548863
+    locked: 0
+  m_RenderingLayers:
+  - Default

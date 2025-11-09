@@ -23,10 +23,7 @@ public class ClockInteraction : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Get the Collider2D attached to this GameObject
         triggerCollider = GetComponent<Collider2D>();
-
-        // Get the layer index of "Player" and convert to a LayerMask
         playerLayer = 1 << LayerMask.NameToLayer("Player");
     }
 

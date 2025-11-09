@@ -45,6 +45,7 @@ public class ThornStatus : MonoBehaviour
         {
             if (interactAction.WasPressedThisFrame() && objNameSO.Value == "Plant")
             {
+                // Disable knockback and allow player to interact when holding Plant
                 Destroy(gameObject);
                 objNameSO.Value = null;
                 AudioManager.instance.PlaySFX(12);

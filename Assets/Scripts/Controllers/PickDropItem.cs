@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PickDropItem : MonoBehaviour
 {
-    private InputAction DropAction;
-    private InputAction PickUpAction;
+    private InputAction dropAction;
+    private InputAction pickUpAction;
     private Collider2D currentPickable;
     public static PickDropItem instance;
     [SerializeField]
@@ -16,22 +16,22 @@ public class PickDropItem : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        DropAction = InputSystem.actions.FindAction("Drop");
-        PickUpAction = InputSystem.actions.FindAction("Interact");
+        dropAction = InputSystem.actions.FindAction("Drop");
+        pickUpAction = InputSystem.actions.FindAction("Interact");
     
     }
 
 
     void Update()
     {
-        if (DropAction.WasPressedThisFrame() && objNameSO.Value != null)
+        if (dropAction.WasPressedThisFrame() && objNameSO.Value != null)
         {
             Debug.Log("Dropping item");
             DoDropItem(objNameSO.Value);
 
         }
-        else if (PickUpAction.WasPressedThisFrame() && currentPickable != null)
-        {
+        else if (pickUpAction.WasPressedThisFrame() && currentPickable != null)
+        {   // Drop current item and pick up new item
             if (objNameSO.Value != null)
             {
                 DoDropItem(objNameSO.Value);
@@ -65,7 +65,6 @@ public class PickDropItem : MonoBehaviour
     private void DoDropItem(string objName)
     {
         objNameSO.Value = null;
-        //GameObject player = GameObject.FindWithTag("Player");
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;

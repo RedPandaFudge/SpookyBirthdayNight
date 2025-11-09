@@ -27,12 +27,7 @@ public class QuitGameText : MonoBehaviour
             myText.enabled = true;
             if (interactAction.WasPressedThisFrame())
             {
-                //AudioSource Ending = AudioManager.instance.Ending;
-                //Ending.Stop();
                 Application.Quit();
-                
-
-
             }
 
         }

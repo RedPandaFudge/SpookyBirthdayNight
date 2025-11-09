@@ -13,7 +13,7 @@ public class HerbalStatus : MonoBehaviour
 
     void Awake()
     {
-
+        // Shows herbals according to numer of collected
         switch (herbalCount.Value)
         {
             case 0:

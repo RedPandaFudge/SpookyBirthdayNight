@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class ForceRatio : MonoBehaviour
 {
-    // Your design aspect, e.g. 16:9
+    // Force window display ratio at 16:9
     public Vector2 targetAspect = new Vector2(16, 9);
 
     Camera cam;
@@ -18,21 +18,19 @@ public class ForceRatio : MonoBehaviour
 
     void Apply()
     {
-        if (!cam) cam = GetComponent<Camera>();
-
         float target = targetAspect.x / targetAspect.y;
         float window = (float)Screen.width / Screen.height;
 
         if (window > target)
         {
-            // Pillarbox: too wide → reduce width
+            // Reduce width if too wide
             float scale = target / window;
             float x = (1f - scale) * 0.5f;
             cam.rect = new Rect(x, 0f, scale, 1f);
         }
         else
         {
-            // Letterbox: too tall → reduce height
+            // Reduce height if too tall
             float scale = window / target;
             float y = (1f - scale) * 0.5f;
             cam.rect = new Rect(0f, y, 1f, scale);

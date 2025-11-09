@@ -27,14 +27,13 @@ public class HerbalPotStatus : MonoBehaviour
         if (Keyboard.current.anyKey.wasPressedThisFrame)
         {
             if (goEnd)
-            {
+            {   
+                // Go to end scene if all 3 herbals are collected
                 AudioSource BGM = AudioManager.instance.Bgm;
                 BGM.Stop();
                 SceneManager.LoadScene(endScene);
                 AudioSource Ending = AudioManager.instance.Ending;
                 Ending.Play();
-                
-
                 
             }
             else if (herbalCount.Value == 3 && !goEnd)
@@ -44,7 +43,8 @@ public class HerbalPotStatus : MonoBehaviour
                 goEnd = true;
             }
             else
-            {
+            {   
+                // Go back to lobby if not all herbals are collected
                 Vector3 playerPos = new Vector3(0.77f, -2.3765f, 0f);
                 LevelManager.instance.SwitchScene(startScene, playerPos);
             }

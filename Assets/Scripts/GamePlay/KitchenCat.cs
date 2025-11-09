@@ -16,8 +16,9 @@ public class KitchenCat : MonoBehaviour
         if (YarnBallExists)
         {
             animator.Play(Kitchen_CatPlay, 0, 1f);
-            animator.Update(0f);      // forces the pose to apply this frame
-            animator.speed = 0f;      // optional: freezes it so nothing advances
+            // Force the pose to apply the last frame of animation
+            animator.Update(0f);
+            animator.speed = 0f;
         } else
         {
             broomExists = true;

@@ -17,12 +17,8 @@ public class NPCHints : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-       //spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // Get the Collider2D attached to this GameObject
         triggerCollider = GetComponent<Collider2D>();
 
-        // Get the layer index of "Player" and convert to a LayerMask
         playerLayer = 1 << LayerMask.NameToLayer("Player");
         hintToShow.enabled = false;
 
@@ -34,7 +30,8 @@ public class NPCHints : MonoBehaviour
     {
         ifPlayerCollides = triggerCollider.IsTouchingLayers(playerLayer);
         if (ifPlayerCollides && !wasColliding)
-        {
+        {   
+            // Show hint only when player is colliding with NPC
             hintToShow.enabled = true;
             AudioManager.instance.PlaySFX(5);
         }

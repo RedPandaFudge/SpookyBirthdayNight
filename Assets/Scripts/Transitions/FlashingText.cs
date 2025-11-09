@@ -27,7 +27,8 @@ public class FlashingText : MonoBehaviour
             text.color = c;
 
         if (Mathf.Approximately(c.a, target))
-            fadingOut = !fadingOut; // flip direction when we hit the target
+            // Flip direction when hitting the limit
+            fadingOut = !fadingOut;
 
         }
 

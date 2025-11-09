@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(int soundToPlay)
     {
         soundEffects[soundToPlay].Stop();
+        // Adjust pitch for jumping sfx
         if (soundToPlay == 19)
         {
             soundEffects[soundToPlay].pitch = Random.Range(.75f, .8f);
@@ -30,14 +31,4 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    
-       /*public IEnumerator PlaySFX(int soundToPlay)
-    {
-
-        soundEffects[soundToPlay].Stop();
-        soundEffects[soundToPlay].Play();
-
-        // wait until finished
-        yield return new WaitWhile(() => soundEffects[soundToPlay].isPlaying);
-    }    */
 }

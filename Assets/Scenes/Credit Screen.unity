@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 525295966}
   - component: {fileID: 525295965}
   m_Layer: 5
-  m_Name: P
+  m_Name: Quit text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,7 +617,7 @@ Transform:
   m_GameObject: {fileID: 756239926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33, y: -15.79, z: 0}
+  m_LocalPosition: {x: -1.2, y: -16, z: 0}
   m_LocalScale: {x: 0.43000004, y: 0.43000004, z: 0.43000004}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1022,7 +1022,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 3.62801, y: 10.757019}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_SizeDelta: {x: 1500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307900958
 MonoBehaviour:
@@ -1044,9 +1044,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u957F\u9888\u9E7F\u5FCD\u4EBA\n\n\n\u98DF\u4EBA\u82B1\u5E15\u742A\n\n\n\u503E\u6F9CChiram\n\u7070\u97F3Haine\n\u98DF\u4EBA\u82B1\u5E15\u742A\n\u957F\u9888\u9E7F\u5FCD\u4EBA\n\n\n
-    \n\n\n\n\n\n\n\u53C2\u4E0E\u6D4B\u8BD5\u7684\u8BF8\u4F4D\u5C0F\u4F19\u4F34\u4EEC\uFF01\n\n\n\n\n\t\t\n\t        
-    \u6309\u65F6\u5403\u996D\n\n"
+  m_text: "Kirin\n\n\nRedPandaFudge\n\n\nChiram\nHaine\nPaky\nKirin\n\n\n \n\n\n\n\n\n\nEveryone
+    participated in testing!\n\n\n\n\n\t\t\n\t         \t       Eat on Time Studio\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd9ca5c62284db14493a5836d47d220b, type: 2}
   m_sharedMaterial: {fileID: -2438166645779627588, guid: bd9ca5c62284db14493a5836d47d220b, type: 2}
@@ -1847,7 +1846,47 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7B56\u5212&\u7F8E\u672F\n\n\n\n\u7A0B\u5E8F\n\n\n\n\u51FA\u6F14\n\n\n\n\n\n\n\n\n\u97F3\u4E50&\u97F3\u6548\n\n\n\n\n\n\n\u7279\u522B\u611F\u8C22\n\n\n\n\n\n\n\u51FA\u54C1\n\n"
+  m_text: 'Game Design & Art
+
+
+
+
+    Program
+
+
+
+
+    Cast
+
+
+
+
+
+
+
+
+
+    Music & SFX
+
+
+
+
+
+
+
+    Special
+    Thanks
+
+
+
+
+
+
+
+    Project By
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd9ca5c62284db14493a5836d47d220b, type: 2}
   m_sharedMaterial: {fileID: -2438166645779627588, guid: bd9ca5c62284db14493a5836d47d220b, type: 2}

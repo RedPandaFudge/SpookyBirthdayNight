@@ -35,10 +35,7 @@ public class Yarnball : MonoBehaviour
     {
         interactAction = InputSystem.actions.FindAction("Interact");
 
-        // Get the Collider2D attached to this GameObject
         triggerCollider = GetComponent<Collider2D>();
-
-        // Get the layer index of "Player" and convert to a LayerMask
         playerLayer = 1 << LayerMask.NameToLayer("Player");
     }
 
@@ -54,7 +51,6 @@ public class Yarnball : MonoBehaviour
                 spriteRenderer.enabled = true;
                 objNameSO.Value = null;
                 LevelManager.instance.CheckStatus();
-                //KitchenCat.instance.YarnBallExists = true;
                 YarnBallExists = true;
                 
 

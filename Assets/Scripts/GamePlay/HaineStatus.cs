@@ -19,10 +19,6 @@ public class HaineStatus : MonoBehaviour
     public Sprite newStatus;
     public static bool statusChanged;
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
     void Awake()
     {   
         spriteRenderer = GetComponent<SpriteRenderer>();

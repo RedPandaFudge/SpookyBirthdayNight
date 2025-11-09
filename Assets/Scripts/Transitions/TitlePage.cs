@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class TitlePage : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class TitlePage : MonoBehaviour
 
     void Awake()
     {
+        // Initialize the SO values
         objNameSO.Value = null;
         herbalCount.Value = 0;
     }

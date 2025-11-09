@@ -12,7 +12,7 @@ public class InteractionAnim : MonoBehaviour
     private LayerMask playerLayer;
 
     public AudioClip soundEffect;
-    private AudioSource audioSource; 
+    private AudioSource audioSource;
 
 
     InputAction interactAction;
@@ -26,10 +26,7 @@ public class InteractionAnim : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Get the Collider2D attached to this GameObject
         triggerCollider = GetComponent<Collider2D>();
-
-        // Get the layer index of "Player" and convert to a LayerMask
         playerLayer = 1 << LayerMask.NameToLayer("Player");
 
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -44,11 +41,13 @@ public class InteractionAnim : MonoBehaviour
             ifInteracted = true;
             audioSource.PlayOneShot(soundEffect);
 
-        } else
+        }
+        else
         {
             ifInteracted = false;
-        }    
-    animator.SetBool("ifInteracted", ifInteracted);
+        }
+
+        animator.SetBool("ifInteracted", ifInteracted);
     }
 
 }

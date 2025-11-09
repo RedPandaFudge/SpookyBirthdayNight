@@ -47,6 +47,7 @@ public class PlantStatus : MonoBehaviour
         {
             if (objNameSO.Value == "Pumpkin" || objNameSO.Value == "Spider" || objNameSO.Value == "Mushroom")
             {
+                // Plays eating animation only when player is holding Pumplin, Spider, or Mushroom
                 edible = true;
                 objNameSO.Value = null;
                 AudioManager.instance.PlaySFX(10);
@@ -71,9 +72,6 @@ public class PlantStatus : MonoBehaviour
 
     private IEnumerator WaitForAnimation(string stateName)
     {
-        // Wait until the animator is actually in the state
-        //yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName(stateName));
-
         // Wait for the duration of the state
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         edible = false;

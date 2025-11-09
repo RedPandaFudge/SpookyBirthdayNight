@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 
 public class CountingInteractionAnim : MonoBehaviour
 {
@@ -26,10 +25,7 @@ public class CountingInteractionAnim : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        // Get the Collider2D attached to this GameObject
         triggerCollider = GetComponent<Collider2D>();
-
-        // Get the layer index of "Player" and convert to a LayerMask
         playerLayer = 1 << LayerMask.NameToLayer("Player");
 
         counter = 0;
@@ -58,6 +54,7 @@ public class CountingInteractionAnim : MonoBehaviour
             
             if (counter >= 3 && PakyStatus.getHerbal == true)
             {
+                // Show exit when counter >= 3
                 AudioManager.instance.PlaySFX(3);
                 Destroy(curtainToDestory);
                 curtainMoved = true;

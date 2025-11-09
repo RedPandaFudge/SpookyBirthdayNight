@@ -22,26 +22,13 @@ public class LevelManager : MonoBehaviour
     {
         if (instance != null && instance != this) { Destroy(gameObject); return; }
         instance = this;
-        DontDestroyOnLoad(gameObject); // <- this is the persistence switch
+        DontDestroyOnLoad(gameObject);
     }
 
 
     void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
     void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
 
-
-    void Update()
-    {
-        /*switchToPot = false;
-        if(herbalCount.Value == 3 && !switchToPot)
-        {
-            //Scene herbalCollected = SceneManager.GetSceneByName("锅");
-            string herbalCollected = "锅";
-            switchToPot = true;
-            SwitchScene(herbalCollected);
-        }
-        */
-    }
 
 
     public void SwitchScene(string levelToLoad, Vector3 Pos)
@@ -63,7 +50,7 @@ public class LevelManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene s, LoadSceneMode m)
     {
-        // Player persists; it already exists right now.
+        // Place all pickables in current scene, check player's holding status and location
         PickablesManagement.Instance.DetectPickables(s.name);
         CheckStatus();
         player.transform.position = playerPos;
@@ -72,6 +59,7 @@ public class LevelManager : MonoBehaviour
 
     public void CheckStatus()
     {
+        // Check if player is holding anything and display holding sign
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {
@@ -90,7 +78,7 @@ public class LevelManager : MonoBehaviour
 
     private void ShowHoldingSign()
     {
-        // 4) Enable the matching Holding_ sprite
+        // Enable the matching sign with item holding
         var Sign = itemHoldingRoot.Find("Holding_" + objNameSO.Value);
         if (Sign != null)
         {
@@ -103,6 +91,7 @@ public class LevelManager : MonoBehaviour
 
     private void HideAllSigns()
     {
+        // Hide all holding signs
         var allHolding = itemHoldingRoot.GetComponentsInChildren<SpriteRenderer>(true);
         foreach (var sr in allHolding)
         {

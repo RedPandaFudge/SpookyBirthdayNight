@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class AppearByInteraction : MonoBehaviour
 {
     private bool ifPlayerCollides;
-    //private bool ifInteracted;
     private bool spriteAppears;
 
     private Collider2D triggerCollider;
@@ -17,8 +16,6 @@ public class AppearByInteraction : MonoBehaviour
 
 
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         interactAction = InputSystem.actions.FindAction("Interact");
@@ -31,7 +28,6 @@ public class AppearByInteraction : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         ifPlayerCollides = triggerCollider.IsTouchingLayers(playerLayer);
@@ -39,7 +35,7 @@ public class AppearByInteraction : MonoBehaviour
         {
 
             if (spriteAppears)
-            {
+            {   // Hide sprite if it is already displaying
                 spriteToShow.enabled = false;
                 spriteAppears = false;
             }

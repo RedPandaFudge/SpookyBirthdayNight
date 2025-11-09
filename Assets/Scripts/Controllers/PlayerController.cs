@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField] private SpriteRenderer eyesSR;
     [SerializeField] private SpriteRenderer blackSR;
-    //private Transform herbal;
     private Transform eyes;
     private Transform blackMask;
 
@@ -41,7 +40,6 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         instance = this;
-        // 3. Find the references to the "Move" and "Jump" actions
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
 
@@ -57,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
         if (sceneName == "长颈鹿房间" && !KirinLightSwitch.lightOn)
         {
+            // Enable eyes and the black mask in the dark room
             eyes.gameObject.SetActive(true);
             blackMask.gameObject.SetActive(true);
         }
@@ -85,6 +84,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (isGrounded)
                 {
+                    // Allow second jump if player is touching the ground
                     rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpHeight);
                     AudioManager.instance.PlaySFX(19);
                     secondJumpAllowed = true;
@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
             if (rigidBody.linearVelocity.x < 0)
             {
+                // Flip player sprite horizontally if facing left
                 spriteRenderer.flipX = true;
                 eyesSR.flipX = true;
                 blackSR.flipX = true;

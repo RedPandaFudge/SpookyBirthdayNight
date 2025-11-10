@@ -29,7 +29,7 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 - Jump: Space  
 - Interact/Pick up: E  
 - Drop: Q
-- Enter room: S or ↓
+- Enter/Exit room: S or ↓
 
 _Hint: Many environmental elements respond to the **E** key—try interacting to discover puzzle clues and small details._
 

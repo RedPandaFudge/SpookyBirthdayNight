@@ -31,6 +31,8 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 - Drop: Q
 - Enter room: S or ↓
 
+*Hint: Many environmental elements respond to the E key—try interacting to discover puzzle clues and small details.
+
 
 ## Technical Details
 

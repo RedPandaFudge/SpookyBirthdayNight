@@ -10,9 +10,9 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 
 
 ## Screenshots
-<img width="1195" height="671" alt="QQ20251109-224507" src="https://github.com/user-attachments/assets/8f9518a2-c583-43ab-b905-e72c40210531" width="600"/>
-<img width="1196" height="674" alt="QQ20251109-224544" src="https://github.com/user-attachments/assets/af7ec53a-7016-4733-aa76-07e8aa4eaa35" width="600"/>
-<img src="Docs/PreviewGIF.gif" width="600">
+<img width="600" alt="QQ20251109-224507" src="https://github.com/user-attachments/assets/8f9518a2-c583-43ab-b905-e72c40210531"/>
+<img width="600" alt="QQ20251109-224544" src="https://github.com/user-attachments/assets/af7ec53a-7016-4733-aa76-07e8aa4eaa35"/>
+<img width="600" src="docs/PreviewGIF.gif" >
 
 
 
@@ -54,7 +54,7 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 
 ## Credits
 
-Programming: Ella Chen
-Art Assets: Kirin
-Audio: 効果音ラボ, こんとどぅふぃ, にゃるぱかBGM工房, 魔王魂
+Programming: Ella Chen  
+Art Assets: Kirin  
+Audio: 効果音ラボ, こんとどぅふぃ, にゃるぱかBGM工房, 魔王魂  
 

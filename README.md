@@ -3,10 +3,12 @@
 A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and puzzle-focused progression. Created as a personal project to practice game architecture, level design logic, and Unity workflows. All programming work was done by me; art assets were created by a collaborator, and audio uses licensed free resources.
 
 
+
 ## Play
 
 - **Web Version (Browser):** https://redpandafudge.github.io/SpookyBirthdayNight/
 - **Windows Build:** Available in the [Releases](../../releases) section.
+
 
 
 ## Screenshots
@@ -23,6 +25,7 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 - Halloween-themed environment  
 
 
+
 ## Controls
 
 - Move: A/D or ←/→  
@@ -32,6 +35,7 @@ A 2D puzzle-platformer built in Unity, featuring Halloween-themed visuals and pu
 - Enter/Exit room: S or ↓
 
 _Hint: Many environmental elements respond to the **E** key—try interacting to discover puzzle clues and small details._
+
 
 
 ## Technical Details
@@ -49,9 +53,15 @@ _Hint: Many environmental elements respond to the **E** key—try interacting to
 
 ## Building the Project
 
-1. Open the project in Unity 6000.2.5f1
-2. For Web: File → Build Profiles → Web → Build.  
-3. For Windows: File → Build Profiles → Windows → Build.
+### Open the Project
+Open the project in Unity 6000.2.5f1.
+
+### Web Build
+File → Build Profiles → Web → Build.
+
+### Windows Build
+File → Build Profiles → Windows → Build.
+
 
 
 ## Credits

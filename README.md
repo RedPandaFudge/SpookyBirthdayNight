@@ -53,14 +53,10 @@ _Hint: Many environmental elements respond to the **E** key—try interacting to
 
 ## Building the Project
 
-### Open the Project
-Open the project in Unity 6000.2.5f1.
+- **Open the Project:** Open in Unity 6000.2.5f1.
+- **Web Build:** File → Build Profiles → Web → Build.
+- **Windows Build:** File → Build Profiles → Windows → Build.
 
-### Web Build
-File → Build Profiles → Web → Build.
-
-### Windows Build
-File → Build Profiles → Windows → Build.
 
 
 

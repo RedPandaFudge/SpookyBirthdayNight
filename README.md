@@ -42,7 +42,7 @@ _Hint: Many environmental elements respond to the **E** key—try interacting to
 
 - Unity Version: 6000.2.5f1  
 - Build Targets: Web + Windows
-  
+-
 - Gameplay systems implemented using custom C# scripts, including puzzle interactions, state handling, and level logic  
 - Player controller built with Rigidbody2D physics and custom collision checks
 - Event-driven architecture and ScriptableObjects used to manage triggers, interactables, and puzzle components.
